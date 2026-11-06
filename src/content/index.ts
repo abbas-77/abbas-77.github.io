@@ -14,6 +14,8 @@ export const getDictionary = (locale: Locale) => dictionaries[locale];
 
 export const contactDetails = {
   email: "abbasazimii@gmail.com",
+  phone: "09338841157",
+  phoneHref: "tel:+989338841157",
   github: "https://github.com/abbas-77",
   cv: "/abbas-azimi-cv.pdf",
 };

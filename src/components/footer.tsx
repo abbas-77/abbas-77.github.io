@@ -37,9 +37,14 @@ export function Footer({ lang, nav, credit, socialsLabel, page }: Props) {
       <div className="mt-6 flex justify-center">
         <Socials label={socialsLabel} />
       </div>
-      <a href={`mailto:${contactDetails.email}`} dir="ltr" className="mt-5 inline-block text-muted hover:text-accent">
-        {contactDetails.email}
-      </a>
+      <div className="mt-5 flex flex-col items-center gap-1 text-muted">
+        <a href={`mailto:${contactDetails.email}`} dir="ltr" className="hover:text-accent">
+          {contactDetails.email}
+        </a>
+        <a href={contactDetails.phoneHref} dir="ltr" className="hover:text-accent">
+          {contactDetails.phone}
+        </a>
+      </div>
       <p className="mx-auto mt-6 max-w-xl border-t border-line pt-5 text-sm text-muted">{credit}</p>
     </footer>
   );
