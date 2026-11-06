@@ -2,11 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
-  async redirects() {
-    return [{ source: "/", destination: "/fa", permanent: false }];
-  },
+  // Hosted as static files on GitHub Pages, so there is no image server.
+  output: "export",
+  trailingSlash: true,
+  images: { unoptimized: true },
   turbopack: {
     rules: {
       "*.css": {
