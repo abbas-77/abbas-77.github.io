@@ -30,7 +30,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
             {dict.portfolio.seeAll}
           </Link>
         </p>
-        <Contact text={dict.contact} services={dict.services.items.map((item) => item.title)} />
+        <Contact text={dict.contact} />
         <Footer
           lang={lang}
           nav={dict.nav}

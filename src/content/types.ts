@@ -66,13 +66,13 @@ export type Dictionary = {
     heading: string;
     lede: string;
     name: string;
-    email: string;
     phone: string;
-    service: string;
-    timeline: string;
+    email: string;
     details: string;
     send: string;
+    sending: string;
     sent: string;
+    failed: string;
     subject: string;
   };
   footer: { credit: string };
