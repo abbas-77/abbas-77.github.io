@@ -12,6 +12,18 @@ export const hasLocale = (value: string): value is Locale =>
 
 export const getDictionary = (locale: Locale) => dictionaries[locale];
 
+/** Read from each live site: its headers, bundles and markup. */
+export const projectStack: Record<string, string[]> = {
+  customer: ["React", "Tailwind CSS", "Swiper", "PWA"],
+  services: ["Next.js", "Tailwind CSS", "Swiper"],
+  nothing: ["Next.js", "Tailwind CSS"],
+  academy: ["Next.js", "Tailwind CSS", "Swiper"],
+  alitapet: ["Next.js", "Tailwind CSS"],
+  karizbana: ["Next.js", "Tailwind CSS"],
+  sohasys: ["Next.js", "Tailwind CSS"],
+  ctelecom: ["Next.js", "Tailwind CSS", "Swiper"],
+};
+
 export const contactDetails = {
   email: "abbasazimii@gmail.com",
   phone: "09338841157",

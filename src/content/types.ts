@@ -5,12 +5,14 @@ export type Job = {
 };
 
 export type Project = {
-  id: "customer" | "services" | "nothing" | "academy" | "alitapet" | "sohasys" | "ctelecom";
+  id: "customer" | "services" | "nothing" | "academy" | "alitapet" | "karizbana" | "sohasys" | "ctelecom";
   name: string;
   category: string;
   filter: string;
   href: string;
   alt: string;
+  summary: string;
+  features: string[];
 };
 
 export type Dictionary = {

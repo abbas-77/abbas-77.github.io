@@ -6,14 +6,16 @@ import academy from "@/assets/work/academy.webp";
 import alitapet from "@/assets/work/alitapet.webp";
 import ctelecom from "@/assets/work/ctelecom.webp";
 import customer from "@/assets/work/customer.webp";
+import karizbana from "@/assets/work/karizbana.webp";
 import nothing from "@/assets/work/nothing.webp";
 import services from "@/assets/work/services.webp";
 import sohasys from "@/assets/work/sohasys.webp";
 import { SectionHeading } from "@/components/section-heading";
+import { projectStack } from "@/content";
 import type { Dictionary } from "@/content/types";
 import { Flip, MOTION_OK, gsap, useGSAP } from "@/lib/gsap";
 
-const SCREENSHOTS = { academy, alitapet, ctelecom, customer, nothing, services, sohasys };
+const SCREENSHOTS = { academy, alitapet, ctelecom, customer, karizbana, nothing, services, sohasys };
 
 type Props = { text: Dictionary["portfolio"]; title?: string };
 
@@ -82,7 +84,7 @@ export function Portfolio({ text, title = text.heading }: Props) {
               href={project.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group block overflow-hidden rounded-2xl bg-panel"
+              className="group flex h-full flex-col overflow-hidden rounded-2xl bg-panel"
             >
               <div className="overflow-hidden">
                 <Image
@@ -93,9 +95,27 @@ export function Portfolio({ text, title = text.heading }: Props) {
                   className="aspect-[16/10] w-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
                 />
               </div>
-              <div className="flex items-center justify-between gap-4 px-4 py-3 text-sm">
-                <span className="font-bold group-hover:text-accent">{project.name}</span>
-                <span className="text-muted">{project.category}</span>
+              <div className="flex flex-1 flex-col gap-3 px-4 py-4 text-sm">
+                <div className="flex items-center justify-between gap-4">
+                  <span className="font-bold group-hover:text-accent">{project.name}</span>
+                  <span className="text-muted">{project.category}</span>
+                </div>
+                <p className="text-muted">{project.summary}</p>
+                <ul className="space-y-1">
+                  {project.features.map((feature) => (
+                    <li key={feature} className="flex gap-2">
+                      <span aria-hidden className="mt-2 size-1.5 shrink-0 rounded-full bg-accent" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+                <ul dir="ltr" aria-label="Tech stack" className="mt-auto flex flex-wrap gap-1.5 pt-1 rtl:justify-end">
+                  {projectStack[project.id].map((tech) => (
+                    <li key={tech} className="rounded-md border border-line px-2 py-0.5 text-xs text-muted">
+                      {tech}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </a>
           </li>

@@ -90,6 +90,8 @@ export const en: Dictionary = {
         filter: "Service portals",
         href: "https://customer.ctelecom.ir/",
         alt: "Home page of CTelecom Service, an online repair request system, with a courier on a motorcycle",
+        summary: "An online system for requesting phone and accessory repairs.",
+        features: ["Online repair requests", "Pickup and delivery at your door", "Request tracking and service points"],
       },
       {
         id: "services",
@@ -98,6 +100,8 @@ export const en: Dictionary = {
         filter: "Service portals",
         href: "https://services.ctelecom.ir/",
         alt: "After-sales services page of CTelecom with warranty and activation cards",
+        summary: "After-sales services for CTelecom customers.",
+        features: ["Warranty validity check", "Device activation codes", "Device repair status"],
       },
       {
         id: "nothing",
@@ -106,6 +110,8 @@ export const en: Dictionary = {
         filter: "Online stores",
         href: "https://nothingdev.ctelecom.ir/",
         alt: "Dark product page for Nothing Phone on the CTelecom store",
+        summary: "A store for Nothing Phone devices, sold by CTelecom.",
+        features: ["Model, color and storage selection", "Full device specifications", "Accessories added to the cart"],
       },
       {
         id: "academy",
@@ -114,6 +120,8 @@ export const en: Dictionary = {
         filter: "E-learning",
         href: "https://academy.ctelecom.ir/",
         alt: "Home page of CTelecom Academy with a course banner and course cards",
+        summary: "An e-learning platform for mobile and laptop repair courses.",
+        features: ["Group, semi-private and private courses", "Free and past courses", "Consultation requests"],
       },
       {
         id: "alitapet",
@@ -122,6 +130,18 @@ export const en: Dictionary = {
         filter: "Online stores",
         href: "https://alitapet.com/",
         alt: "Home page of ALITA, a store for aquarium water care products",
+        summary: "An online store for aquarium water care products.",
+        features: ["Product categories", "Product catalog and details", "Customer support"],
+      },
+      {
+        id: "karizbana",
+        name: "Kariz Bana Parsian",
+        category: "Company website",
+        filter: "Company websites",
+        href: "https://karizbana.ir/",
+        alt: "Home page of Kariz Bana Parsian with solar panels and a solar plant budget estimator",
+        summary: "The website of an energy engineering and construction company.",
+        features: ["Persian, English and Arabic", "Solar plant investment calculator", "Equipment catalog and consultation requests"],
       },
       {
         id: "sohasys",
@@ -130,6 +150,8 @@ export const en: Dictionary = {
         filter: "Company websites",
         href: "https://sohasys.ir/",
         alt: "Home page of Soha Holding Iranian Smart Systems",
+        summary: "The website of Soha Holding's smart systems company.",
+        features: ["Persian and English", "Products and services", "Collaboration and contact"],
       },
       {
         id: "ctelecom",
@@ -138,6 +160,8 @@ export const en: Dictionary = {
         filter: "Company websites",
         href: "https://ctelecom.ir/",
         alt: "Home page of CTelecom with a banner announcing repair training courses",
+        summary: "The company website and hub for CTelecom's services.",
+        features: ["Links to the shop, services and academy", "Magazine and careers", "Product highlights"],
       },
     ],
     privateHeading: "Behind a login",
